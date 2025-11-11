@@ -1,0 +1,43 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--gap);
+}
+
+.city {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.hours-scroll {
+	display: flex;
+	gap: 12px;
+	overflow-x: auto;
+}
+.hour {
+	background: var(--elev-2);
+	border-radius: 12px;
+	padding: 8px;
+	text-align: center;
+	min-width: 70px;
+}
+
+.tabs {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+.tab.active {
+	background: var(--accent);
+	color: #111;
+}
+
+.forecasts .item {
+	background: var(--elev-2);
+	border-radius: 12px;
+	padding: 8px 12px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}

@@ -1,0 +1,33 @@
+.app-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--gap);
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header {
+	grid-column: 1 / -1;
+}
+
+.current-hourly {
+	grid-column: 1 / span 8;
+}
+.map {
+	grid-column: 9 / -1;
+}
+.overview {
+	grid-column: 1 / span 8;
+}
+.forecasts {
+	grid-column: 9 / -1;
+}
+
+@media (max-width: 1000px) {
+	.current-hourly,
+	.map,
+	.overview,
+	.forecasts {
+		grid-column: 1 / -1;
+	}
+}

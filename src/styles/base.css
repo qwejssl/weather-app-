@@ -1,0 +1,89 @@
+:root {
+	--bg: #f8f9fb;
+	--elev: #fff;
+	--elev-2: #f1f3f5;
+	--text: #1b1f27;
+	--muted: #5a6371;
+	--accent: #007aff;
+	--ok: #23c48e;
+	--warn: #e0b941;
+
+	--radius: 18px;
+	--gap: 24px;
+	--shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+
+	--font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter,
+		Arial;
+}
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	background: var(--bg);
+	color: var(--text);
+	font: 16px/1.45 var(--font);
+	padding: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	font-weight: 700;
+}
+a {
+	color: var(--accent);
+}
+
+.card {
+	background: var(--elev);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	padding: 16px;
+}
+
+.pill {
+	background: #dce0e6;
+	color: var(--text);
+	border-radius: 999px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	padding: 8px 14px;
+	cursor: pointer;
+}
+.pill.ghost {
+	background: transparent;
+}
+
+.icon-btn {
+	display: grid;
+	place-items: center;
+	height: 36px;
+	width: 36px;
+	border-radius: 12px;
+	background: #dce0e6;
+	color: var(--text);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+}
+
+.skeleton {
+	border-radius: 12px;
+	background: linear-gradient(90deg, #ccc 25%, #ddd 37%, #ccc 63%);
+	background-size: 400% 100%;
+	animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}

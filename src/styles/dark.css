@@ -1,0 +1,74 @@
+html[data-theme='dark'] {
+	--bg: #0e131a;
+	--elev: #161c25;
+	--elev-2: #1e2631;
+	--text: #eef3fa;
+	--muted: #9ca9b8;
+	--accent: #80d0f5;
+	--ok: #7ae3c2;
+	--warn: #ffd566;
+
+	--shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* background */
+body {
+	background: radial-gradient(1200px 600px at 30% -20%, #182030, transparent),
+		var(--bg);
+	color: var(--text);
+}
+
+/* elements */
+.card {
+	background: linear-gradient(180deg, var(--elev), var(--elev-2));
+	box-shadow: var(--shadow);
+}
+
+.input,
+.pill,
+.icon-btn {
+	background: #1e2835;
+	color: var(--text);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.pill.ghost {
+	background: transparent;
+}
+
+.tab {
+	background: #222d3c;
+	color: var(--text);
+}
+.tab.active {
+	background: var(--accent);
+	color: #0e151d;
+}
+
+.hour,
+.forecasts .item {
+	background: rgba(255, 255, 255, 0.05);
+	border-color: rgba(255, 255, 255, 0.08);
+}
+
+::-webkit-scrollbar {
+	height: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background: #384457;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #4a5a71;
+}
+
+.toast {
+	background: #1e2a3b;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	color: var(--text);
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
