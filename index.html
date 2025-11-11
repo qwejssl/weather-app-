@@ -4,13 +4,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Stormglass Dashboard</title>
-		<link rel="stylesheet" href="/styles/base.css" />
-		<link rel="stylesheet" href="/styles/layout.css" />
-		<link rel="stylesheet" href="/styles/components.css" />
-		<link rel="stylesheet" href="/styles/dark.css" />
+
+		<!-- NOTE: your styles are inside src/styles -->
+		<link rel="stylesheet" href="./src/styles/base.css" />
+		<link rel="stylesheet" href="./src/styles/layout.css" />
+		<link rel="stylesheet" href="./src/styles/components.css" />
+		<link rel="stylesheet" href="./src/styles/dark.css" />
 	</head>
 	<body>
 		<div id="root"></div>
-		<script type="module" src="/src/app.js"></script>
+
+		<!-- NOTE: your app.js currently lives in src/utils -->
+		<script type="module" src="./src/utils/app.js"></script>
 	</body>
 </html>
