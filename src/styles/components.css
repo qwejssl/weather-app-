@@ -145,6 +145,7 @@
 	background: var(--list-bg);
 	border: 1px solid var(--list-border);
 	text-align: center;
+	margin-bottom: 20px;
 }
 .hour .time {
 	color: var(--muted);

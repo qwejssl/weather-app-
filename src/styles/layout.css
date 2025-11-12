@@ -18,9 +18,11 @@ header {
 }
 .overview {
 	grid-column: 1 / span 8;
+	margin-bottom: 50px;
 }
 .forecasts {
 	grid-column: 9 / -1;
+	margin-bottom: 50px;
 }
 
 @media (max-width: 1000px) {
